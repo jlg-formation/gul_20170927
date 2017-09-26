@@ -1,7 +1,6 @@
-(function () {
-    'use strict';
+import { myDate } from './my-date.component.js';
 
-    var app = angular.module('my-widgets', []);
-})();
+angular.module('my-widgets', [])
+    .component('myDate', myDate);
 
 

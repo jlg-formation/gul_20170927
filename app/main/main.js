@@ -1,7 +1,7 @@
-(function () {
-    'use strict';
+import 'angular';
+import '../my-layout/my-layout.js';
 
-    var app = angular.module('main', ['my-layout']);
-})();
+import { myApp } from './my-app.component.js';
 
-
+angular.module('main', ['my-layout'])
+    .component('myApp', myApp);

@@ -96,11 +96,5 @@ module.exports = {
 	devtool: 'source-map',
 	plugins: [
 		new ExtractTextPlugin('[name].css'),
-		// comment this if you do not need jQuery.
-		new webpack.ProvidePlugin({
-			$: 'jquery',
-			jQuery: 'jquery',
-			'window.jQuery': 'jquery'
-		})
 	]
 };
