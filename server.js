@@ -5,7 +5,9 @@ var app = express();
 
 app.all('/ws/date', function(req, res, next) {
 	console.log('date', req.url);
-	res.json({date: new Date().getTime()});
+	setTimeout(function() {
+		res.json({date: new Date().getTime()});		
+	}, 2000);
 });
 
 app.use(express.static('.'));
