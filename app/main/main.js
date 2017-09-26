@@ -1,3 +1,6 @@
+import '../style.scss';
+
+
 import 'angular';
 import '../my-layout/my-layout.js';
 
