@@ -1,9 +1,10 @@
 export const config = function ($provide) {
+    'ngInject';
     $provide.decorator('$rootScope', function ($delegate) {
-        var emit = $delegate.$emit;
+        const emit = $delegate.$emit;
 
         $delegate.$emit = function () {
-            var args = Array.prototype.slice.apply(arguments);
+            const args = Array.prototype.slice.apply(arguments);
             args.unshift('event sent: ');
             console.log.apply(console, args);
             emit.apply(this, arguments);

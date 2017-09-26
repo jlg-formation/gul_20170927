@@ -1,5 +1,6 @@
 export const myDate = {
     controller: function MyDateCtrl($http, $rootScope) {
+        'ngInject';
         var ctrl = this;
         console.log('MyAppCtrl', this);
         $http.get('../ws/date').then(function (response) {
