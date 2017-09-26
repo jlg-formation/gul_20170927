@@ -8,7 +8,7 @@
             console.log('MyAppCtrl', this);
             this.name = 'Maïté';
         },
-        template: '<h1>Hello {{$ctrl.name}}</h1>'
+        templateUrl: 'main/my-app.component.html'
     });
 })();
 
