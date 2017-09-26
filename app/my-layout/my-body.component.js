@@ -8,7 +8,7 @@
             console.log('MyBodyCtrl', this);
             this.name = 'Maïté';
         },
-        templateUrl: 'my-layout/my-body.component.html'
+        templateUrl: 'my-layout/tmpl/my-body.component.html'
     });
 })();
 

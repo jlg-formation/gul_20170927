@@ -3,6 +3,11 @@ var serveIndex = require('serve-index');
 
 var app = express();
 
+app.all('/ws/date', function(req, res, next) {
+	console.log('date', req.url);
+	res.json({date: new Date().getTime()});
+});
+
 app.use(express.static('.'));
 app.use(serveIndex('.', {icons: true}));
 

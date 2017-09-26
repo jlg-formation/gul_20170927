@@ -7,7 +7,7 @@
         controller: function MyFooterCtrl() {
             console.log('MyFooterCtrl', this);
         },
-        templateUrl: 'my-layout/my-footer.component.html'
+        templateUrl: 'my-layout/tmpl/my-footer.component.html'
     });
 })();
 

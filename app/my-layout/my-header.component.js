@@ -7,7 +7,7 @@
         controller: function MyHeaderCtrl() {
             console.log('MyHeaderCtrl', this);
         },
-        templateUrl: 'my-layout/my-header.component.html'
+        templateUrl: 'my-layout/tmpl/my-header.component.html'
     });
 })();
 
