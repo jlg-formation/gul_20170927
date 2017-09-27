@@ -1,6 +1,8 @@
 <h1>Hello {{$ctrl.name}}</h1>
 <my-stars></my-stars><br>
 <my-stars note="3"></my-stars><br>
+<input ng-model="$ctrl.myNote"><br>
+<my-stars note="$ctrl.myNote"></my-stars><br>
 
 
 
