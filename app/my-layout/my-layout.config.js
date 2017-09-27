@@ -3,8 +3,10 @@ import productsHtml from './tmpl/products.html'
 import servicesHtml from './tmpl/services.html'
 import contactHtml from './tmpl/contact.html'
 
-export const config = function ($stateProvider) {
+export const config = function ($locationProvider, $urlRouterProvider, $stateProvider) {
     'ngInject';
+
+    $locationProvider.html5Mode(true);
 
     $stateProvider.state({
         name: 'home',
@@ -26,5 +28,7 @@ export const config = function ($stateProvider) {
         url: '/contact',
         template: contactHtml
     });
+
+    $urlRouterProvider.otherwise('/');
 }
 
