@@ -1,7 +1,5 @@
+import html from './my-app.component.html'
+
 export const myApp = {
-    templateUrl: 'main/my-app.component.html'
+    template: html
 };
-
-
-
-

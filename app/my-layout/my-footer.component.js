@@ -1,5 +1,5 @@
+import html from './tmpl/my-footer.component.html';
+
 export const myFooter = {
-    templateUrl: 'my-layout/tmpl/my-footer.component.html'
+    template: html
 };
-
-

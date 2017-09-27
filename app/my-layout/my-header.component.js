@@ -1,5 +1,5 @@
+import html from './tmpl/my-header.component.html';
+
 export const myHeader = {
-    templateUrl: 'my-layout/tmpl/my-header.component.html'
+    template: html
 };
-
-
